@@ -1,5 +1,5 @@
 @echo off
-title Practica con MS-DOS [ TMECDICE 1749611 - YEISON OROZCO ]
+title Practica con MS-DOS [ YEISON OROZCO ]
 color f0
 :menuPrincipal
 cls
@@ -14,10 +14,9 @@ echo             +                  MENU                    +
 echo             +                                          +
 echo             +------------------------------------------+
 echo             +                                          +
-echo             +           [1] Iniciar demo               +
-echo             +           [2] Utilidades                 +
-echo             +           [3] Creditos                   +
-echo             +           [4] Salir                      +
+echo             +           [1] Utilidades                 +
+echo             +           [2] Creditos                   +
+echo             +           [3] Salir                      +
 echo             +                                          +
 echo             +------------------------------------------+
 echo             +                                          +
@@ -31,10 +30,9 @@ echo.
 echo.
 echo.
 CHOICE /N /C 1234 /M ""
-if errorlevel ==4 goto salir
-if errorlevel ==3 goto creditos
-if errorlevel ==2 goto utilidades
-if errorlevel ==1 goto iniciarDemo
+if errorlevel ==3 goto salir
+if errorlevel ==2 goto creditos
+if errorlevel ==1 goto utilidades
 ::=======================================================
 :creditos
 cls
@@ -76,7 +74,7 @@ echo             +               UTILIDADES                 +
 echo             +                                          +
 echo             +------------------------------------------+
 echo             +                                          +
-echo             +           [1] Ir a Sofiaplus             +
+echo             +           [1] Mi perfil en Github        +
 echo             +           [2] Ver IPconfig (basico)      +
 echo             +           [3] Menu principal             +
 echo             +                                          +
@@ -84,7 +82,7 @@ echo             +------------------------------------------+
 choice /n /c 123 /m ""
 if errorlevel ==3 goto menuprincipal
 if errorlevel ==2 goto verIPConfigBasico
-if errorlevel ==1 goto irSofiaPlus
+if errorlevel ==1 goto miPerfilGithub
 ::=======================================================
 :verIPConfigBasico
 cls
@@ -94,45 +92,14 @@ echo.
 pause
 goto:menuprincipal
 ::=======================================================
-:irSofiaPlus
+:miPerfilGithub
 cls
 echo.
 echo Abriendo navegador...
 echo.
-start http://oferta.senasofiaplus.edu.co/sofia-oferta/
+start https://github.com/yeison-oc
 echo Listo!
 echo.
-pause
-goto:menuprincipal
-::=======================================================
-:iniciarDemo
-cls
-echo.
-echo Creando carpeta raiz...
-md TMECDICE
-cd TMECDICE
-start.
-echo.
-echo Listo!
-echo.
-echo Creando estructura de carpetas...
-md APLI PROG VARIOS
-cd apli
-md WORD ACCESS EXCEL
-cd word
-md TEXTOS NOTAS
-cd..
-cd excel
-md TABLAS INFO
-cd..
-cd..
-cd prog
-md BASIC PASCAL FORTRAN
-echo.
-echo Listo!
-echo.
-cd..
-tree
 pause
 goto:menuprincipal
 ::=======================================================
