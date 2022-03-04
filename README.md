@@ -1,8 +1,8 @@
-# Multipropositos-Comandos-Bat
+# Multipropositos .Bat
 
 ¡Hola!
 
-Este es un archivo que puede servir como guía de instalación de programas después de formatear un pc.
+Este es un archivo que puede servir como ayuda para brindar soporte en un pc.
 
 ## Pre-requisitos 📋
 
@@ -10,19 +10,11 @@ Como es un archivo BAT, lo único que necesita es un computador con una versión
 
 ### Instalación 🔧
 
-Descargue el archivo en formato ZIP y ejecute el archivo llamado "ComandosMSDOS.bat".
+* Descargue el archivo en formato ZIP.
+* Ejecute el archivo llamado "Multipropositos (como Admin)" con privilegios de Administrador.
 
 El archivo está en español, espero sea de ayuda.
-
-## Construido con 🛠️
-
-* [Atom](https://atom.io/) - Atom
-* [Windows](https://www.microsoft.com/es-co/windows/) - Windows
 
 ## Autores ✒️
 
 * **Yeison Orozco** - *Trabajo Inicial* - [yeison-oc](https://gist.github.com/yeison-oc)
-
-### Gracias 🎁
-
-* 🤓 Gracias a [Villanuevand](https://github.com/Villanuevand) por facilitar esta plantilla de README 😊.
